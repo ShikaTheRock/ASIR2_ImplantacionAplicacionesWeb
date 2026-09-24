@@ -34,11 +34,12 @@ nuevo:
 		exit 1; \
 	fi
 	@if [ -d "$(NOMBRE)" ]; then \
-		echo "Error: la carpeta $(NOMBRE) ya existe."; \
-		exit 1; \
+		echo "WARNING: la carpeta $(NOMBRE) ya existe."; \
+	else \
+			mkdir -p "$(NOMBRE)"; \
 	fi
 
-	mkdir -p "$(NOMBRE)"
+
 
 	@echo '---' > "$(NOMBRE)/$(NOMBRE).md"
 	@echo 'title: "$(NOMBRE)"' >> "$(NOMBRE)/$(NOMBRE).md"
