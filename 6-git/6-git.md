@@ -30,7 +30,7 @@ César creó su rama de característica, editó el archivo añadiendo un estado 
 ![César creando la rama caracteristica-a y editando con nano](6-git/1.png)
 
 Posteriormente, modificó el fichero usando `nano` para dejar el texto *"Estado: Eso es pepino"* y configuró el upstream para publicarlo:
-
+z
 ![César editando el fichero_inicial](6-git/2.png)
 
 Tras esto, César volvió a la rama `main` y fusionó su rama mediante un avance rápido (*Fast-forward*), haciendo el commit correspondiente y subiendo los cambios limpios al servidor:
